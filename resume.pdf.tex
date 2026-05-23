@@ -1,0 +1,171 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Usharani} \\ \vspace{1pt}
+    \small (+91) 9964747849 $|$
+    \href{mailto:usharanidoddmani018@gmail.com}{\underline{usharanidoddmani018@gmail.com}} $|$
+    \href{https://linkedin.com/in/usharani-s-39a397374}{\underline{linkedin.com/in/usharani-s-39a397374}} $|$
+    \href{https://github.com/usharanidoddmani1010}{\underline{github.com/usharanidoddmani1010}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BMS College of Engineering, Bengaluru}{2024 -- 2028}
+      {Bachelor of Engineering in Computer Science (CSE) $|$ SGPA: 9.157}{}
+    \resumeSubheading
+      {National Public School}{2022 -- 2024}
+      {12th, Board $|$ 94.15\%}{}
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Virtual Hackathon Platform (HackathonHub)} $|$ \emph{MongoDB, Express.js, React.js, Node.js, JWT}}{Sep 2025 -- Jan 2026}
+          \resumeItemListStart
+            \resumeItem{Built a full-stack Virtual Hackathon Platform enabling challenge hosting, team formation, submissions, and judging.}
+            \resumeItem{Implemented JWT-based authentication and authorization with multi-role support (Admin, Mentor, Participant).}
+            \resumeItem{Developed secure RESTful APIs for user management, challenge registration, submissions, and evaluations.}
+            \resumeItem{First web project of its kind in the college; planned to be dedicated to the institution after deployment.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Hostel Management System} $|$ \emph{Java, JDBC, MySQL, Swing, MVC Architecture}}{Nov 2025 -- Jan 2026}
+          \resumeItemListStart
+            \resumeItem{Built a Java-based Hostel Management System to automate student registration, room allocation, fee management, and record maintenance.}
+            \resumeItem{Implemented role-based access for admin and students to ensure secure data handling.}
+            \resumeItem{Designed and integrated MySQL database using JDBC for efficient storage and retrieval of hostel records.}
+            \resumeItem{Applied MVC architecture to separate business logic, UI, and data layers, improving maintainability and scalability.}
+            \resumeItem{Reduced manual paperwork and administrative effort by over 60\% through digital workflows.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Smart Attendance (QR \& GPS)} $|$ \emph{Java, Flutter, Node.js, Firebase/MySQL, QR Auth, GPS APIs}}{Mar 2026 -- Ongoing}
+          \resumeItemListStart
+            \resumeItem{Developed a mobile-based smart attendance system using secure QR code scanning with GPS-based fake attendance detection.}
+            \resumeItem{Implemented location verification and time-bound QR validation to prevent proxy attendance and improve authenticity.}
+            \resumeItem{Integrated SQLite database for persistent storage of attendance records.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java (Data Structures \& Algorithms), Python (basics), C} \\
+     \textbf{Frontend}{: HTML, CSS, JavaScript, React.js} \\
+     \textbf{Backend \& Databases}{: Node.js, Express.js, MySQL, MongoDB} \\
+     \textbf{Developer Tools}{: Git, GitHub, VS Code} \\
+     \textbf{CS Fundamentals}{: Object-Oriented Programming, DBMS, Operating Systems}
+    }}
+ \end{itemize}
+
+
+%-----------ADDITIONAL INFORMATION-----------
+\section{Additional Information}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Activities}{: Hackathon Finalist (first hackathon participation)} \\
+     \textbf{Hobbies}{: Reading books, problem solving \& coding challenges, playing cricket, building side projects, learning new technologies, open-source exploration, reading tech blogs \& documentation}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
